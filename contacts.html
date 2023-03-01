@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puutarhaliike Neilikka</title>
+    <link rel="icon" type="image/png" href="img/logo.png" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="scripts.js"></script>
+</head>
+    <body>
+        <div class="bg__wrap">
+            <div class="content__wrap">
+                <header class="header">
+                    <div class="container flex header__container">
+                        <a href="index.html" class="header__logo">
+                            <img src="img/logo.png" class="header-logo" alt="logo">Puutarhaliike Neilikka
+                        </a>
+                        <nav class="header__nav">
+                            <div id="myTopnav" class="topnav">
+                               <a href="index.html" class="nav__link"> Etusivu
+
+                                    </a>
+                                <a href="products.html" class="nav__link"> Tuotteet
+
+                                    </a>
+                                <a href="stores.html" class="nav__link"> Myymälät
+
+                                    </a>
+                                <a href="about.html" class="nav__link"> Tietoa meistä
+
+                                    </a>
+                                <a href="contacts.html" class="nav__link"> Ota yhteytt&auml;
+
+                                    </a>
+                                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                        <i class="fa fa-bars"></i>
+                                    </a>                     
+                                </div>
+                                
+                        </nav>              
+                    </div>
+                </header>
+                <main>
+                    <div class="container">
+                        <h2>Ota yhteyttä</h2>
+                        <p class="section-descr">Voit ottaa meihin yhteyttä <br> <br>
+
+                            * puhelimitse yksitt&auml;isiin myym&auml;l&ouml;ihin <br>
+                            * s&auml;hk&ouml;postitse: asiakaspalvelu@puutarhaliikeneilikka.fi <br>
+                            * alla olevalla lomakkeella</p>
+                        <form onsubmit="tallennus()" method="" class="form flex">                    
+                            <div class="form-left flex">
+                                    <input class="form-input" type="text" name="name" minlength="2" maxlength="40" placeholder="Nimi" required>
+                                    <input class="form-input" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Sähköposti" required>
+                                    <input class="form-input" type="tel" name="phone"  placeholder="Puhelin" required>
+                                    <select class="form-select" name="topic">
+                                        <option value="topic" disabled selected>Aihe</option>
+                                        <option value="question">kysymys tuotteista</option>
+                                        <option value="order">tilaus</option>
+                                        <option value="callback">yhteydenottopyyntö </option>
+                                        <option value="other">muu</option>
+                                    </select>
+                            </div>
+                            <div class="form-right flex">
+                                    <textarea class="form-textarea" name="comment" placeholder="Viesti"></textarea>
+                                    <p class="section-descr subscribe__descr">Haluan tilata Puutarhaliike Neilikan uutiskirjeen</p>
+                                    <div>
+                                        <label class="subscribe__check">
+                                            <input type="radio" name="subscribe">ei 
+                                        </label>
+                                        <label class="subscribe__check subscribe__check_no">
+                                            <input type="radio" name="subscribe">kyllä
+                                        </label>
+                                    </div>
+                                    <button class="btn-reset btn">Lähetä</button>
+                            </div>
+                        </form>                    
+                    </div>        
+                </main>
+                <footer>
+                    <div class="container">
+                        <p class="footer_descr">Web-ohjelmointikurssi <br>
+                        Mininäyttö: Puutarhaliike Neilikka <br>
+                        Evgeny Bogdanov
+                        </p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
